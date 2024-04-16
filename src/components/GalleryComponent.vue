@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3" v-for="photo in dataMars.photos">
-                <PhotoComponent :image="photo.img_src" alt="" :earthDate="photo.earth_date"/>
+                <PhotoComponent :image="photo.img_src" alt="" :earthDate="photo.earth_date" :rover="photo.rover.name" :id="photo.id" :sol="photo.sol"/>
             </div>
         </div>
     </div>

@@ -1,15 +1,17 @@
 <template>
     <div>
-<img :src="image" alt="">
-<p>{{ earthDate }}</p>
+        <p>{{ rover }}</p>
+        <img :src="image" alt="">
+        <p>{{ earthDate }}</p>
+        <p>{{ sol }}</p>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'PhotoComponent',
-        props: ['image', 'earthDate']
-    }
+export default {
+    name: 'PhotoComponent',
+    props: ['image', 'earthDate', 'rover', 'id', 'sol']
+}
 </script>
 
 <style lang="scss" scoped>

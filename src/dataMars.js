@@ -6,9 +6,10 @@ endPoint: {
     opportunity: "opportunity/photos",
    spirit: "spirit/photos"
    },
-   params: {
-    earth_date: '2015-6-3',
+   options: {
+    params: {
+    earth_date: '2019-6-3',
     api_key: 'nogy1jh5NYHBOH74Ulx6PItrBShUfQXLEwbQ18nb',
-  },
+  }},
 photos: [],
 });
