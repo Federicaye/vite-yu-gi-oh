@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     getPhotos() {
-axios.get(this.dataMars.apiUrl+this.dataMars.endPoint.curiosity+ '?sol=1000&api_key=nogy1jh5NYHBOH74Ulx6PItrBShUfQXLEwbQ18nb').then((res) =>
+axios.get(this.dataMars.apiUrl+this.dataMars.endPoint.curiosity, { params: this.dataMars.options.params }).then((res) =>
  {this.dataMars.photos = res.data.photos;})
     }
   },
