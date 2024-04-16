@@ -1,8 +1,7 @@
 <template>
   <div>
     <HeaderComponent />
-    <MainComponent />
-    <GalleryComponent/>
+    <GalleryComponent />
   </div>
 </template>
 
@@ -24,8 +23,7 @@ export default {
   },
   methods: {
     getPhotos() {
-axios.get(this.dataMars.apiUrl+this.dataMars.endPoint.curiosity, { params: this.dataMars.options.params }).then((res) =>
- {this.dataMars.photos = res.data.photos;})
+      axios.get(this.dataMars.apiUrl + this.dataMars.endPoint, { params: this.dataMars.options.params }).then((res) => { this.dataMars.photos = res.data.photos; })
     }
   },
   created() {
