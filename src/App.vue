@@ -24,7 +24,7 @@ export default {
   methods: {
     getPhotos() {
       axios.get(this.dataMars.apiUrl + this.dataMars.endPoint, { params: this.dataMars.options.params }).then((res) => { this.dataMars.photos = res.data.photos; })
-    }
+    } 
   },
   created() {
     this.getPhotos()

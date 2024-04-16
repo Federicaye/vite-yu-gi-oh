@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>gi</p>
-        <SelectComponent @chooseRover="this.dataMars.actions.getPhotos" />
+        <SelectComponent @chooseRover="this.getPhotos" />
     </div>
 </template>
 

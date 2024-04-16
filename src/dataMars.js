@@ -16,7 +16,7 @@ export const dataMars = reactive({
   photos: [],
   actions: {
     getPhotos() {
-      axios.get(dataMars.apiUrl + dataMars.endPoint, { params: dataMars.options.params }).then((res) => { dataMars.photos = res.data.photos; })
+      axios.get(this.apiUrl + this.endPoint, { params: this.options.params }).then((res) => { this.photos = res.data.photos; })
     }
 
   } 
