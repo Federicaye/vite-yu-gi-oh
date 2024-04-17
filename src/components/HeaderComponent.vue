@@ -1,17 +1,20 @@
 <template>
     <div>
-        <p>gi</p>
-        <SelectComponent @chooseRover="this.dataMars.actions.getPhotos" />
+        <select name="" id="" v-model="dataMars.rover" @change="$emit('chooseRover')">
+        <option value="">All rovers</option>
+        <option value="curiosity/photos">Curiosoty</option>
+        <option value="opportunity/photos">Opportunity</option>
+        <option value="spirit/photos">Spirit</option>
+    </select>
     </div>
 </template>
 
 <script>
-import SelectComponent from './SelectComponent.vue';
 import { dataMars } from '../dataMars.js';
 export default {
     name: 'HeaderComponent',
     components: {
-        SelectComponent,
+        
     },
     data(){
         return{

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderComponent />
+    <HeaderComponent @chooseRover="this.getPhotos"/>
     <GalleryComponent />
   </div>
 </template>
@@ -10,6 +10,7 @@ import { dataMars } from './dataMars.js';
 import axios from 'axios';
 import HeaderComponent from './components/HeaderComponent.vue';
 import GalleryComponent from './components/GalleryComponent.vue';
+
 export default {
   name: 'App',
   components: {
@@ -23,8 +24,8 @@ export default {
   },
   methods: {
     getPhotos() {
-      axios.get(this.dataMars.apiUrl + this.dataMars.endPoint, { params: this.dataMars.options.params }).then((res) => { this.dataMars.photos = res.data.photos; })
-    }
+      axios.get(this.dataMars.apiUrl + this.dataMars.rover, { params: this.dataMars.options.params }).then((res) => { this.dataMars.photos = res.data.photos; })
+    } 
   },
   created() {
     this.getPhotos()
