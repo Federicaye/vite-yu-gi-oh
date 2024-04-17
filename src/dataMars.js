@@ -12,7 +12,7 @@ export const dataMars = reactive({
       api_key: 'nogy1jh5NYHBOH74Ulx6PItrBShUfQXLEwbQ18nb',
     }
   },
-  endPoint: 'curiosity/photos',
+  rover: '',
   photos: [],
   actions: {
     getPhotos() {

@@ -8,9 +8,15 @@
 </template>
 
 <script>
+import { dataMars } from '../dataMars.js';
 export default {
     name: 'PhotoComponent',
-    props: ['image', 'earthDate', 'rover', 'id', 'sol']
+    props: ['image', 'earthDate', 'rover', 'id', 'sol'],
+    data(){
+        return{
+            dataMars,
+        }
+    }
 }
 </script>
 
